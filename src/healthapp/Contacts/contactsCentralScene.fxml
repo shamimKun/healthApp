@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="432.0" prefWidth="510.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23" fx:controller="healthapp.Contacts.ContactsCentralSceneController">
+   <children>
+      <ImageView fitHeight="509.0" fitWidth="510.0" layoutY="-14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="86.18731689453125" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-14.0">
+         <image>
+            <Image url="@list.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

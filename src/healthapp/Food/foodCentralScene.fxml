@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="432.0" prefWidth="510.0" spacing="5.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="healthapp.Food.FoodCentralSceneController">
+   <children>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="432.0" prefWidth="255.0" style="-fx-border-color: black;">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Search Food Items" wrappingWidth="164.787109375">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="30.0" top="20.0" />
+               </VBox.margin>
+            </Text>
+            <TextField fx:id="searchBox" onAction="#handleSearrch" prefHeight="36.0" prefWidth="242.0" promptText="enter food name">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <TableView fx:id="foodIInputTable" prefHeight="328.0" prefWidth="254.0" style="-fx-background-color: teal;">
+              <columns>
+                <TableColumn fx:id="foodNameColumn" prefWidth="75.0" text="C1" />
+                <TableColumn fx:id="calorySizeColumn" prefWidth="75.0" text="C2" />
+              </columns>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </TableView>
+         </children>
+      </VBox>
+      <VBox prefHeight="432.0" prefWidth="255.0" style="-fx-border-color: black;">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Selected Food Items" wrappingWidth="190.787109375">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="30.0" top="20.0" />
+               </VBox.margin>
+            </Text>
+            <Button fx:id="saveButton" mnemonicParsing="false" text="Save">
+               <VBox.margin>
+                  <Insets left="100.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+            <TableView fx:id="foodServeTable" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="328.0" prefWidth="254.0" style="-fx-background-color: coral;">
+               <columns>
+                  <TableColumn fx:id="foodNameColumn2" prefWidth="75.0" text="C1" />
+                  <TableColumn fx:id="CaloryColumn2" prefWidth="75.0" text="C2" />
+               </columns>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </TableView>
+         </children>
+      </VBox>
+   </children>
+</HBox>

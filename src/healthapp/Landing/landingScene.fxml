@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="mainBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="healthapp.Landing.LandingSceneController">
+   <left>
+      <AnchorPane fx:id="leftSidePane" prefHeight="540.0" prefWidth="140.0" style="-fx-background-color: coral;" BorderPane.alignment="CENTER">
+         <children>
+            <VBox fx:id="leftMenuBox" layoutX="20.0" layoutY="25.0" onDragDetected="#handleMisc" prefHeight="200.0" prefWidth="100.0" spacing="15.0" AnchorPane.leftAnchor="20.0">
+               <children>
+                  <Button fx:id="homeButton" mnemonicParsing="false" onAction="#handleHome" prefHeight="25.0" prefWidth="105.0" style="-fx-background-radius: 20; -fx-background-color: teal;" text="Home" textFill="WHITE" />
+                  <Button fx:id="activitesButton" mnemonicParsing="false" onAction="#handleActivities" prefHeight="25.0" prefWidth="105.0" style="-fx-background-radius: 20; -fx-background-color: teal;" text="Acitivites" textFill="WHITE" />
+                  <Button fx:id="foodButton" mnemonicParsing="false" onAction="#handleFood" prefHeight="25.0" prefWidth="105.0" style="-fx-background-radius: 20; -fx-background-color: teal;" text="Food Intake" textFill="WHITE" />
+                  <Button fx:id="recordsButton" mnemonicParsing="false" onAction="#handleRecords" prefHeight="25.0" prefWidth="105.0" style="-fx-background-radius: 20; -fx-background-color: teal;" text="Records" textFill="WHITE" />
+                  <Button fx:id="profileButton" mnemonicParsing="false" onAction="#handleProfile" prefHeight="25.0" prefWidth="105.0" style="-fx-background-radius: 20; -fx-background-color: teal;" text="Profile" textFill="WHITE" />
+                  <Button fx:id="contactsButton" mnemonicParsing="false" onAction="#handleContacts" prefHeight="25.0" prefWidth="105.0" style="-fx-background-radius: 20; -fx-background-color: teal;" text="Contacts" textFill="WHITE" />
+                  <Button fx:id="indexButton" mnemonicParsing="false" onAction="#handleIndex" prefHeight="25.0" prefWidth="105.0" style="-fx-background-radius: 20; -fx-background-color: teal;" text="Index" textFill="WHITE" />
+                  <Button fx:id="miscButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="105.0" style="-fx-background-radius: 20; -fx-background-color: teal;" text="Misc." textFill="WHITE" />
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane fx:id="centralPane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox fx:id="centralHbox" prefHeight="100.0" prefWidth="520.0" spacing="25.0">
+               <children>
+                  <Pane fx:id="caloriesTakenPane" prefHeight="100.0" prefWidth="168.0" style="-fx-background-color: teal; -fx-background-radius: 10;">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <children>
+                        <Label fx:id="takenMessageLabel" layoutX="12.0" layoutY="12.0" text="Calories Taken" textFill="#e8e8e8">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="caloriesTakenOutputLabel" layoutX="11.0" layoutY="35.0" prefHeight="38.0" prefWidth="85.0" text="154547" textFill="#e8e8e8">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="caloriesBurnPane" prefHeight="100.0" prefWidth="168.0" style="-fx-background-color: teal; -fx-background-radius: 10;">
+                     <children>
+                        <Label fx:id="burnLabel" layoutX="12.0" layoutY="12.0" text="Calories Burn" textFill="#e8e8e8">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="caloriesBurnOutputLabel" layoutX="11.0" layoutY="35.0" prefHeight="38.0" prefWidth="85.0" text="154547" textFill="#e8e8e8">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="caloriesRemainPane" prefHeight="100.0" prefWidth="168.0" style="-fx-background-color: teal; -fx-background-radius: 10;">
+                     <children>
+                        <Pane prefHeight="200.0" prefWidth="200.0" />
+                        <Label fx:id="remainLabel" layoutX="12.0" layoutY="12.0" text="Remain" textFill="#e8e8e8">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="caloriesRemainOutputLabel" layoutX="11.0" layoutY="35.0" prefHeight="38.0" prefWidth="85.0" text="154547" textFill="#e8e8e8">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <AnchorPane fx:id="UpperPane" prefHeight="108.0" prefWidth="960.0" style="-fx-background-color: floralwhite;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="helthlogo" fitHeight="88.0" fitWidth="130.0" layoutX="8.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@appLogo.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="helloLabel" layoutX="141.0" layoutY="10.0" prefHeight="40.0" prefWidth="330.0" text="Hello Mr.Sakata Gintoki">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="taglineLabel" ellipsisString="sasa" layoutX="144.0" layoutY="58.0" prefHeight="17.0" prefWidth="297.0" text="Random dsdfdfdfdfdfd" />
+            <Label fx:id="dateILabel" alignment="TOP_RIGHT" contentDisplay="CENTER" layoutX="786.0" layoutY="56.0" prefHeight="17.0" prefWidth="150.0" text="12/12/2020">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="dateIcon" fitHeight="42.0" fitWidth="32.0" layoutX="898.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@calanderIcon.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </top>
+   <right>
+      <AnchorPane fx:id="rightSidePane" prefHeight="432.0" prefWidth="300.0" style="-fx-background-color: aliceblue;" BorderPane.alignment="CENTER">
+         <children>
+            <VBox fx:id="rightSideHbox" layoutX="117.0" layoutY="57.0" prefHeight="303.0" prefWidth="151.0" spacing="30.0" AnchorPane.rightAnchor="32.0">
+               <children>
+                  <Pane fx:id="agePane" prefHeight="79.0" prefWidth="151.0" style="-fx-background-color: teal; -fx-background-radius: 20;">
+                     <children>
+                        <Label fx:id="AgeLAbel" layoutX="110.0" layoutY="29.0" text="Age" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="ageOutputLabel" layoutX="14.0" layoutY="-3.0" prefHeight="85.0" prefWidth="54.0" text="15" textFill="#f8f8f8">
+                           <font>
+                              <Font name="Impact" size="50.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="weightPane" prefHeight="79.0" prefWidth="151.0" style="-fx-background-color: teal; -fx-background-radius: 20;">
+                     <children>
+                        <Label fx:id="weightLabel" layoutX="89.0" layoutY="29.0" text="Weight" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="weightOutputLabel" layoutX="14.0" layoutY="-3.0" prefHeight="85.0" prefWidth="54.0" text="15" textFill="#f8f8f8">
+                           <font>
+                              <Font name="Impact" size="50.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="heightPane" prefHeight="79.0" prefWidth="151.0" style="-fx-background-color: teal; -fx-background-radius: 20;">
+                     <children>
+                        <Label fx:id="heightLabel" layoutX="100.0" layoutY="29.0" text="Height" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="heightOutputLabel" layoutX="14.0" layoutY="-3.0" prefHeight="85.0" prefWidth="54.0" text="15" textFill="#f8f8f8">
+                           <font>
+                              <Font name="Impact" size="50.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
