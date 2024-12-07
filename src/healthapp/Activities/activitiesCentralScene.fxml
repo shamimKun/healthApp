@@ -18,7 +18,7 @@
                   <Font name="System Bold" size="20.0" />
                </font>
             </Text>
-            <TextField fx:id="walkingInputText" layoutX="8.0" layoutY="50.0" prefHeight="38.0" prefWidth="227.0" style="-fx-background-radius: 10;" AnchorPane.leftAnchor="15.0" />
+            <TextField fx:id="walkingInputText" layoutX="8.0" layoutY="50.0" onAction="#saveInWalkingHashMap" prefHeight="38.0" prefWidth="227.0" style="-fx-background-radius: 10;" AnchorPane.leftAnchor="15.0" />
             <ImageView fitHeight="70.0" fitWidth="62.0" layoutX="500.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="15.0">
                <image>
                   <Image url="@walkIcon.gif" />
@@ -33,7 +33,7 @@
                   <Font name="System Bold" size="20.0" />
                </font>
             </Text>
-            <TextField fx:id="runningInputText" layoutX="8.0" layoutY="50.0" prefHeight="38.0" prefWidth="227.0" style="-fx-background-radius: 10;" AnchorPane.leftAnchor="15.0" />
+            <TextField fx:id="runningInputText" layoutX="8.0" layoutY="50.0" onAction="#saveInRunningHashMap" prefHeight="38.0" prefWidth="227.0" style="-fx-background-radius: 10;" AnchorPane.leftAnchor="15.0" />
             <ImageView fitHeight="70.0" fitWidth="62.0" layoutX="500.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="15.0">
                <image>
                   <Image url="@walkIcon.gif" />
@@ -48,7 +48,7 @@
                   <Font name="System Bold" size="20.0" />
                </font>
             </Text>
-            <TextField fx:id="swimmimgInputText" layoutX="8.0" layoutY="50.0" prefHeight="38.0" prefWidth="227.0" style="-fx-background-radius: 10;" AnchorPane.leftAnchor="15.0" />
+            <TextField fx:id="swimmimgInputText" layoutX="8.0" layoutY="50.0" onAction="#saveInSwiimingHashMap" prefHeight="38.0" prefWidth="227.0" style="-fx-background-radius: 10;" AnchorPane.leftAnchor="15.0" />
             <ImageView fitHeight="70.0" fitWidth="62.0" layoutX="500.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="15.0">
                <image>
                   <Image url="@walkIcon.gif" />
@@ -63,7 +63,7 @@
                   <Font name="System Bold" size="20.0" />
                </font>
             </Text>
-            <TextField fx:id="excerciseInputText" layoutX="8.0" layoutY="50.0" prefHeight="38.0" prefWidth="227.0" style="-fx-background-radius: 10;" AnchorPane.leftAnchor="15.0" />
+            <TextField fx:id="excerciseInputText" layoutX="8.0" layoutY="50.0" onAction="#saveInExeciseHashMap" prefHeight="38.0" prefWidth="227.0" style="-fx-background-radius: 10;" AnchorPane.leftAnchor="15.0" />
             <ImageView fitHeight="70.0" fitWidth="62.0" layoutX="500.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="15.0">
                <image>
                   <Image url="@walkIcon.gif" />

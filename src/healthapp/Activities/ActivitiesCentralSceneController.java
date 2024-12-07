@@ -7,8 +7,10 @@ package healthapp.Activities;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.VBox;
 
 /**
@@ -19,7 +21,13 @@ import javafx.scene.layout.VBox;
 public class ActivitiesCentralSceneController implements Initializable {
 
     @FXML
-    private VBox acitivitiesVBox;
+    private TextField walkingInputText;
+    @FXML
+    private TextField runningInputText;
+    @FXML
+    private TextField swimmimgInputText;
+    @FXML
+    private TextField excerciseInputText;
 
     /**
      * Initializes the controller class.
@@ -28,5 +36,21 @@ public class ActivitiesCentralSceneController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
+
+    @FXML
+    private void saveInWalkingHashMap(ActionEvent event) {
+    }
+
+    @FXML
+    private void saveInRunningHashMap(ActionEvent event) {
+    }
+
+    @FXML
+    private void saveInSwiimingHashMap(ActionEvent event) {
+    }
+
+    @FXML
+    private void saveInExeciseHashMap(ActionEvent event) {
+    }
     
 }

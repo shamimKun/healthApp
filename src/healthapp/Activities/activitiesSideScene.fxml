@@ -3,42 +3,37 @@
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
-<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 
-<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefViewportHeight="432.0" prefViewportWidth="320.0" prefWidth="329.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23">
+<ScrollPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefViewportHeight="432.0" prefViewportWidth="320.0" prefWidth="329.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1">
    <content>
-      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="320.0">
+      <VBox prefHeight="540.0" prefWidth="320.0" spacing="20.0">
          <children>
-            <VBox prefHeight="540.0" prefWidth="320.0" spacing="5.0">
-               <children>
-                  <TableView prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: teal;">
-                     <columns>
-                        <TableColumn prefWidth="75.0" text="C1" />
-                        <TableColumn prefWidth="75.0" text="C2" />
-                     </columns>
-                  </TableView>
-                  <TableView prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: coral;">
-                     <columns>
-                        <TableColumn prefWidth="75.0" text="C1" />
-                        <TableColumn prefWidth="75.0" text="C2" />
-                     </columns>
-                  </TableView>
-                  <TableView prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: teal;">
-                     <columns>
-                        <TableColumn prefWidth="75.0" text="C1" />
-                        <TableColumn prefWidth="75.0" text="C2" />
-                     </columns>
-                  </TableView>
-                  <TableView prefHeight="185.0" prefWidth="320.0" style="-fx-background-color: coral;">
-                     <columns>
-                        <TableColumn prefWidth="75.0" text="C1" />
-                        <TableColumn prefWidth="75.0" text="C2" />
-                     </columns>
-                  </TableView>
-               </children>
-            </VBox>
+            <TableView prefHeight="250.0" prefWidth="310.0" style="-fx-background-color: teal;">
+               <columns>
+                  <TableColumn prefWidth="75.0" text="Date" />
+                  <TableColumn prefWidth="75.0" text="Walking" />
+               </columns>
+            </TableView>
+            <TableView prefHeight="250.0" prefWidth="310.0" style="-fx-background-color: coral;">
+               <columns>
+                  <TableColumn prefWidth="75.0" text="Date" />
+                  <TableColumn prefWidth="75.0" text="Running" />
+               </columns>
+            </TableView>
+            <TableView prefHeight="250.0" prefWidth="310.0" style="-fx-background-color: teal;">
+               <columns>
+                  <TableColumn prefWidth="75.0" text="Date" />
+                  <TableColumn prefWidth="75.0" text="Swimmimg" />
+               </columns>
+            </TableView>
+            <TableView prefHeight="250.0" prefWidth="310.0" style="-fx-background-color: coral;">
+               <columns>
+                  <TableColumn prefWidth="75.0" text="Date" />
+                  <TableColumn prefWidth="75.0" text="Exercise" />
+               </columns>
+            </TableView>
          </children>
-      </AnchorPane>
+      </VBox>
    </content>
 </ScrollPane>
