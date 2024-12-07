@@ -1,78 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextArea?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" prefHeight="432.0" prefWidth="510.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="healthapp.Activities.ActivitiesCentralSceneController">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="432.0" prefWidth="510.0" spacing="8.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="healthapp.Activities.ActivitiesCentralSceneController">
    <children>
-      <VBox fx:id="acitivitiesVBox" layoutX="-1.0" layoutY="-2.0" prefHeight="432.0" prefWidth="510.0">
+      <AnchorPane prefHeight="100.0" prefWidth="600.0" style="-fx-background-color: aliceBlue; -fx-background-radius: 20;">
          <children>
-            <AnchorPane prefHeight="108.0" prefWidth="510.0" style="-fx-background-color: white; -fx-background-radius: 30\; -fx-border-color: coral; -fx-border-radius: 30;">
-               <children>
-                  <Label layoutX="19.0" layoutY="16.0" text="Enter How Many Steps You Walk Today">
-                     <font>
-                        <Font size="15.0" />
-                     </font>
-                  </Label>
-                  <TextArea layoutX="20.0" layoutY="40.0" prefHeight="34.0" prefWidth="178.0" promptText="input Intefer" style="-fx-background-radius: 5; -fx-border-radius: 5;" />
-                  <ImageView fitHeight="67.0" fitWidth="89.0" layoutX="385.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@walkIcon.gif" />
-                     </image>
-                  </ImageView>
-               </children>
-            </AnchorPane>
-            <AnchorPane prefHeight="108.0" prefWidth="510.0" style="-fx-background-color: white; -fx-background-radius: 30\; -fx-border-color: coral; -fx-border-radius: 30;">
-               <children>
-                  <Label layoutX="19.0" layoutY="16.0" text="Enter How Times You Swimm Today">
-                     <font>
-                        <Font size="15.0" />
-                     </font>
-                  </Label>
-                  <TextArea layoutX="20.0" layoutY="40.0" prefHeight="34.0" prefWidth="178.0" promptText="input Intefer" style="-fx-background-radius: 5; -fx-border-radius: 5;" />
-                  <ImageView fitHeight="67.0" fitWidth="89.0" layoutX="385.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@walkIcon.gif" />
-                     </image>
-                  </ImageView>
-               </children>
-            </AnchorPane>
-            <AnchorPane prefHeight="108.0" prefWidth="510.0" style="-fx-background-color: white; -fx-background-radius: 30\; -fx-border-color: coral; -fx-border-radius: 30;">
-               <children>
-                  <Label layoutX="19.0" layoutY="16.0" text="Enter How Times You Exrecise Today">
-                     <font>
-                        <Font size="15.0" />
-                     </font>
-                  </Label>
-                  <TextArea layoutX="20.0" layoutY="40.0" prefHeight="34.0" prefWidth="178.0" promptText="input Intefer" style="-fx-background-radius: 5; -fx-border-radius: 5;" />
-                  <ImageView fitHeight="67.0" fitWidth="89.0" layoutX="385.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@walkIcon.gif" />
-                     </image>
-                  </ImageView>
-               </children>
-            </AnchorPane>
-            <AnchorPane prefHeight="108.0" prefWidth="510.0" style="-fx-background-color: white; -fx-background-radius: 30\; -fx-border-color: coral; -fx-border-radius: 30;">
-               <children>
-                  <Label layoutX="19.0" layoutY="16.0" text="Enter How Many Distance You Run Today">
-                     <font>
-                        <Font size="15.0" />
-                     </font>
-                  </Label>
-                  <TextArea layoutX="20.0" layoutY="40.0" prefHeight="34.0" prefWidth="178.0" promptText="input Intefer" style="-fx-background-radius: 5; -fx-border-radius: 5;" />
-                  <ImageView fitHeight="67.0" fitWidth="89.0" layoutX="385.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@walkIcon.gif" />
-                     </image>
-                  </ImageView>
-               </children>
-            </AnchorPane>
+            <Text layoutX="14.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Walking" AnchorPane.leftAnchor="15.0">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="walkingInputText" layoutX="8.0" layoutY="50.0" prefHeight="38.0" prefWidth="227.0" style="-fx-background-radius: 10;" AnchorPane.leftAnchor="15.0" />
+            <ImageView fitHeight="70.0" fitWidth="62.0" layoutX="500.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="15.0">
+               <image>
+                  <Image url="@walkIcon.gif" />
+               </image>
+            </ImageView>
          </children>
-      </VBox>
+      </AnchorPane>
+      <AnchorPane prefHeight="100.0" prefWidth="600.0" style="-fx-background-color: aliceBlue; -fx-background-radius: 20;">
+         <children>
+            <Text layoutX="14.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Running" AnchorPane.leftAnchor="15.0">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="runningInputText" layoutX="8.0" layoutY="50.0" prefHeight="38.0" prefWidth="227.0" style="-fx-background-radius: 10;" AnchorPane.leftAnchor="15.0" />
+            <ImageView fitHeight="70.0" fitWidth="62.0" layoutX="500.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="15.0">
+               <image>
+                  <Image url="@walkIcon.gif" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="100.0" prefWidth="600.0" style="-fx-background-color: aliceBlue; -fx-background-radius: 20;">
+         <children>
+            <Text layoutX="14.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Swimming" AnchorPane.leftAnchor="15.0">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="swimmimgInputText" layoutX="8.0" layoutY="50.0" prefHeight="38.0" prefWidth="227.0" style="-fx-background-radius: 10;" AnchorPane.leftAnchor="15.0" />
+            <ImageView fitHeight="70.0" fitWidth="62.0" layoutX="500.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="15.0">
+               <image>
+                  <Image url="@walkIcon.gif" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="100.0" prefWidth="600.0" style="-fx-background-color: aliceBlue; -fx-background-radius: 20;">
+         <children>
+            <Text layoutX="14.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Exercise" AnchorPane.leftAnchor="15.0">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="excerciseInputText" layoutX="8.0" layoutY="50.0" prefHeight="38.0" prefWidth="227.0" style="-fx-background-radius: 10;" AnchorPane.leftAnchor="15.0" />
+            <ImageView fitHeight="70.0" fitWidth="62.0" layoutX="500.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="15.0">
+               <image>
+                  <Image url="@walkIcon.gif" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
    </children>
-</AnchorPane>
+   <padding>
+      <Insets left="15.0" right="10.0" />
+   </padding>
+</VBox>
