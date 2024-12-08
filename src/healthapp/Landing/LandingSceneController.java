@@ -6,7 +6,10 @@
 package healthapp.Landing;
 
 import healthapp.Core.Utility;
+import healthapp.HealthApp;
+import healthapp.User;
 import java.net.URL;
+import java.time.LocalDate;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -28,6 +31,7 @@ import javafx.scene.layout.VBox;
  */
 public class LandingSceneController implements Initializable {
 
+    User user=HealthApp.user;
     @FXML
     private BorderPane mainBorderPane;
     @FXML
@@ -106,6 +110,7 @@ public class LandingSceneController implements Initializable {
     private Label heightLabel;
     @FXML
     private Label heightOutputLabel;
+    
 
     /**
      * Initializes the controller class.
@@ -113,6 +118,14 @@ public class LandingSceneController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
+       String x= Integer.toString(user.getTodayCaloriesBurned());
+       caloriesBurnOutputLabel.setText(x);
+       
+       String y= Integer.toString(user.getTodayCaloriesTaken());
+       caloriesTakenOutputLabel.setText(y);
+       
+       String z= Integer.toString(user.getTodayCaloriesBurned()-user.getTodayCaloriesTaken());
+       caloriesRemainOutputLabel.setText(z);
     }    
 
     @FXML
@@ -132,7 +145,7 @@ public class LandingSceneController implements Initializable {
     @FXML
     private void handleFood(ActionEvent event) throws Exception 
     {
-        Utility.changeCenterScene(mainBorderPane, getClass(), "/healthapp/Food/foodCentralScene.fxml");
+        Utility.changeCenterScene(mainBorderPane, getClass(), "/healthapp/Food/FoodTracker.fxml");
         Utility.changeRightScene(mainBorderPane, getClass(), "/healthapp/Food/foodSideScene.fxml");
     }
 
@@ -163,5 +176,6 @@ public class LandingSceneController implements Initializable {
     @FXML
     private void handleMisc(MouseEvent event) {
     }
+    
     
 }
